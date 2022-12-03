@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_bloc_cubit/utils/utils_app.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class _DetailPageState extends State<DetailPage> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     titlePage = ModalRoute.of(context)!.settings.arguments.toString();
-    print('Value args: $titlePage');
+    printLog('Value args: $titlePage');
   }
 
   @override
